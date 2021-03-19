@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Test
+import java.util.*
 
 class Test {
 
@@ -13,6 +14,13 @@ class Test {
     fun test4(){
         val solution4 = Solution4()
         val r = solution4.findMedianSortedArrays(intArrayOf(1,3), intArrayOf(2))
+        println(r)
+    }
+
+    @Test
+    fun test5(){
+        val solution5 = Solution5()
+        val r = solution5.longestPalindrome("cbbd")
         println(r)
     }
 }
