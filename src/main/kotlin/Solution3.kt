@@ -7,6 +7,9 @@
  * 链接：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters
  */
 class Solution3 {
+    /**
+     * 滑动窗口，只需遍历一次，时间复杂度 O(n)
+     */
     fun lengthOfLongestSubstring(s: String): Int {
         var max = 0
         var continuous = ""

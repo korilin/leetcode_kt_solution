@@ -9,7 +9,7 @@
 
 本仓库所有题目均来自 **[力扣（LeetCode）](https://leetcode-cn.com/problemset/all/)**
 
-所有记录的解题代码均成功通过 LeetCode 的提交执行，但不记录提交的执行时间和内存消耗（因为不是很有必要）
+所有记录的解题代码均成功通过 LeetCode 的提交执行，但不记录提交的执行时间和内存消耗（因为这不是重点）
 
 ## 题目
 
@@ -29,7 +29,7 @@
 ```Kotlin
 class Solution1 {
     /**
-     * 使用哈希表的key来进行匹配，时间复杂度 O(n)
+     * 使用哈希表的 key 来进行匹配，时间复杂度 O(n)
      */
     fun twoSum(nums: IntArray, target: Int): IntArray {
         val hashMap = HashMap<Int, Int>()
@@ -66,10 +66,8 @@ class Solution2 {
         var node2 = l2
         var sum: Int
         var carry = 0
-
         val l3 = ListNode(0)
         var now: ListNode? = null
-
         while (node1 != null || node2 != null || carry == 1) {
             sum = (node1?.`val` ?: 0) + (node2?.`val` ?: 0) + carry
             carry = sum / 10
@@ -98,6 +96,9 @@ class Solution2 {
 
 ```Kotlin
 class Solution3 {
+    /**
+     * 滑动窗口，只需遍历一次，时间复杂度 O(n)
+     */
     fun lengthOfLongestSubstring(s: String): Int {
         var max = 0
         var continuous = ""
@@ -123,6 +124,10 @@ class Solution3 {
 
 ```Kotlin
 class Solution4 {
+    /**
+     * 更好的解题思路请查看官方解题
+     * https://leetcode-cn.com/problems/median-of-two-sorted-arrays/solution/xun-zhao-liang-ge-you-xu-shu-zu-de-zhong-wei-s-114/
+     */
     fun findMedianSortedArrays(nums1: IntArray, nums2: IntArray): Double {
         val length = nums1.size + nums2.size
         var middle = 0
@@ -169,6 +174,9 @@ class Solution4 {
 
 ```Kotlin
 class Solution5 {
+    /**
+     * 中心扩展，时间复杂度：O(n^2), 空间复杂度 O(1)
+     */
     fun longestPalindrome(s: String): String {
         var left = 0
         var right = 0
@@ -261,6 +269,7 @@ class Solution6 {
 class Solution7 {
     /**
      * Note：
+     * 时间复杂度 O(n), O(1), n 为数字长度
      * Int.MAX_VALUE = 2^31 − 1 = 2147483647
      * Int.MIN_VALUE = −2^31 = -2147483648
      */
@@ -305,6 +314,7 @@ class Solution7 {
 ```Kotlin
 /**
  * Note：
+ * 时间复杂度 O(n), O(1), n 为字符串长度
  * Int.MAX_VALUE = 2^31 − 1 = 2147483647
  * Int.MIN_VALUE = −2^31 = -2147483648
  * readStatus:

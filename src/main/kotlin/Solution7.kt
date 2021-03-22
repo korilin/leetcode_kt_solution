@@ -11,6 +11,7 @@
 class Solution7 {
     /**
      * Note：
+     * 时间复杂度 O(n), O(1), n 为数字长度
      * Int.MAX_VALUE = 2^31 − 1 = 2147483647
      * Int.MIN_VALUE = −2^31 = -2147483648
      */

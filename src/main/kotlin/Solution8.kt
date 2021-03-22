@@ -21,6 +21,7 @@
 class Solution8 {
     /**
      * Note：
+     * 时间复杂度 O(n), O(1), n 为字符串长度
      * Int.MAX_VALUE = 2^31 − 1 = 2147483647
      * Int.MIN_VALUE = −2^31 = -2147483648
      * readStatus:

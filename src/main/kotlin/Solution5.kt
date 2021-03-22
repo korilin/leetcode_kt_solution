@@ -7,6 +7,9 @@
  * 链接：https://leetcode-cn.com/problems/longest-palindromic-substring
  */
 class Solution5 {
+    /**
+     * 中心扩展，时间复杂度：O(n^2), 空间复杂度 O(1)
+     */
     fun longestPalindrome(s: String): String {
         var left = 0
         var right = 0

@@ -14,10 +14,8 @@ class Solution2 {
         var node2 = l2
         var sum: Int
         var carry = 0
-
         val l3 = ListNode(0)
         var now: ListNode? = null
-
         while (node1 != null || node2 != null || carry == 1) {
             sum = (node1?.`val` ?: 0) + (node2?.`val` ?: 0) + carry
             carry = sum / 10

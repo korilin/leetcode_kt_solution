@@ -11,7 +11,7 @@
  */
 class Solution1 {
     /**
-     * 使用哈希表的key来进行匹配，时间复杂度 O(n)
+     * 使用哈希表的 key 来进行匹配，时间复杂度 O(n)
      */
     fun twoSum(nums: IntArray, target: Int): IntArray {
         val hashMap = HashMap<Int, Int>()

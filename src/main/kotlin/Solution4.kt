@@ -7,6 +7,10 @@
  * 链接：https://leetcode-cn.com/problems/median-of-two-sorted-arrays
  */
 class Solution4 {
+    /**
+     * 更好的解题思路请查看官方解题
+     * https://leetcode-cn.com/problems/median-of-two-sorted-arrays/solution/xun-zhao-liang-ge-you-xu-shu-zu-de-zhong-wei-s-114/
+     */
     fun findMedianSortedArrays(nums1: IntArray, nums2: IntArray): Double {
         val length = nums1.size + nums2.size
         var middle = 0
