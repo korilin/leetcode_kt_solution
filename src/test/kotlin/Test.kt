@@ -23,4 +23,15 @@ class Test {
         val r = solution5.longestPalindrome("cbbd")
         println(r)
     }
+
+    @Test
+    fun test8(){
+        val solution8 = Solution8()
+        println(solution8.myAtoi("42"))
+        println(solution8.myAtoi("  428www"))
+        println(solution8.myAtoi("   -42"))
+        println(solution8.myAtoi("abc123"))
+        println(solution8.myAtoi("91283472332"))
+        println(solution8.myAtoi("-91283472332"))
+    }
 }
