@@ -24,7 +24,8 @@
 
 你可以按任意顺序返回答案。
 
-链接：https://leetcode-cn.com/problems/two-sum
+- 难度：简单
+- 链接：https://leetcode-cn.com/problems/two-sum
 
 ```Kotlin
 class Solution1 {
@@ -57,7 +58,8 @@ class Solution1 {
 
 你可以假设除了数字 0 之外，这两个数都不会以 0 开头。
 
-链接：https://leetcode-cn.com/problems/add-two-numbers
+- 难度：中等
+- 链接：https://leetcode-cn.com/problems/add-two-numbers
 
 ```Kotlin
 class Solution2 {
@@ -92,7 +94,8 @@ class Solution2 {
 
 给定一个字符串，请你找出其中不含有重复字符的 **最长子串** 的长度。
 
-链接：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters
+- 难度：中等
+- 链接：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters
 
 ```Kotlin
 class Solution3 {
@@ -120,7 +123,8 @@ class Solution3 {
 
 给定两个大小分别为 `m` 和 `n` 的正序（从小到大）数组 `nums1` 和 `nums2`。请你找出并返回这两个正序数组的 **中位数**。
 
-链接：https://leetcode-cn.com/problems/median-of-two-sorted-arrays
+- 难度：困难
+- 链接：https://leetcode-cn.com/problems/median-of-two-sorted-arrays
 
 ```Kotlin
 class Solution4 {
@@ -170,7 +174,8 @@ class Solution4 {
 
 给你一个字符串 `s`，找到 `s` 中最长的回文子串。
 
-链接：https://leetcode-cn.com/problems/longest-palindromic-substring
+- 难度：中等
+- 链接：https://leetcode-cn.com/problems/longest-palindromic-substring
 
 ```Kotlin
 class Solution5 {
@@ -221,7 +226,8 @@ Y   I   R
 ```
 之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如：`"PAHNAPLSIIGYIR"`。
 
-链接：https://leetcode-cn.com/problems/zigzag-conversion
+- 难度：中等
+- 链接：https://leetcode-cn.com/problems/zigzag-conversion
 
 ```Kotlin
 class Solution6 {
@@ -263,7 +269,8 @@ class Solution6 {
 
 **假设环境不允许存储 64 位整数（有符号或无符号）。**
 
-链接：https://leetcode-cn.com/problems/reverse-integer
+- 难度：简单
+- 链接：https://leetcode-cn.com/problems/reverse-integer
 
 ```Kotlin
 class Solution7 {
@@ -309,7 +316,8 @@ class Solution7 {
 - 本题中的空白字符只包括空格字符 `' '` 。
 - 除前导空格或数字后的其余字符串外，请勿忽略 任何其他字符。
 
-链接：https://leetcode-cn.com/problems/string-to-integer-atoi
+- 难度：中等
+- 链接：https://leetcode-cn.com/problems/string-to-integer-atoi
 
 ```Kotlin
 /**
@@ -351,13 +359,42 @@ fun myAtoi(s: String): Int {
 </details>
 
 <details>
+<summary>9. 回文数</summary>
+
+### 回文数
+
+给你一个整数 `x` ，如果 `x` 是一个回文整数，返回 `true` ；否则，返回 `false` 。
+
+回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。例如，`121` 是回文，而 `123` 不是。
+
+- 难度：
+- 链接：https://leetcode-cn.com/problems/palindrome-number
+
+```Kotlin
+class Solution9 {
+    fun isPalindrome(x: Int): Boolean {
+        if (x < 0 || (x != 0 && x % 10 == 0)) return false
+        var y = x
+        var revertedNumber = 0
+        while (y > revertedNumber) {
+            revertedNumber = revertedNumber * 10 + y % 10
+            y /= 10
+        }
+        return revertedNumber == y || revertedNumber / 10 == y
+    }
+}
+```
+</details>
+
+<details>
 <summary>模板</summary>
 
 ### 题目
 
 description
 
-链接：
+- 难度：
+- 链接：
 
 ```Kotlin
 code

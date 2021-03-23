@@ -34,4 +34,10 @@ class Test {
         println(solution8.myAtoi("91283472332"))
         println(solution8.myAtoi("-91283472332"))
     }
+
+    @Test
+    fun test9(){
+        val solution9 = Solution9()
+        println(solution9.isPalindrome(121))
+    }
 }
