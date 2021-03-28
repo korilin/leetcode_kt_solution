@@ -40,4 +40,10 @@ class Test {
         val solution9 = Solution9()
         println(solution9.isPalindrome(121))
     }
+
+    @Test
+    fun test10(){
+        val solution10 = Solution10()
+        println(solution10.isMatch("aaa", "a*a"))
+    }
 }

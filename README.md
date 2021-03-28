@@ -316,6 +316,7 @@ class Solution7 {
 - 本题中的空白字符只包括空格字符 `' '` 。
 - 除前导空格或数字后的其余字符串外，请勿忽略 任何其他字符。
 
+
 - 难度：中等
 - 链接：https://leetcode-cn.com/problems/string-to-integer-atoi
 
@@ -381,6 +382,32 @@ class Solution9 {
             y /= 10
         }
         return revertedNumber == y || revertedNumber / 10 == y
+    }
+}
+```
+</details>
+
+<details>
+<summary>10. 正则表达式匹配</summary>
+
+### 正则表达式匹配
+
+给你一个字符串 `s` 和一个字符规律 `p` ，请你来实现一个支持 `'.'` 和 `'*'` 的正则表达式匹配。
+
+- `'.'` 匹配任意单个字符
+- `'*'` 匹配零个或多个前面的那一个元素
+所谓匹配，是要涵盖 **整个** 字符串 `s` 的，而不是部分字符串。
+  
+- 难度：困难
+- 链接：https://leetcode-cn.com/problems/regular-expression-matching
+
+```Kotlin
+class Solution10 {
+    /**
+     * 可能性：
+     */
+    fun isMatch(s: String, p: String): Boolean {
+        TODO()
     }
 }
 ```
