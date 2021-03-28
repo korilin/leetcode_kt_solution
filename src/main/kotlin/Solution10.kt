@@ -13,7 +13,7 @@
  */
 class Solution10 {
     /**
-     * 可能性：
+     * 做不出
      */
     fun isMatch(s: String, p: String): Boolean {
         TODO()
