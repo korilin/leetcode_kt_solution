@@ -1,4 +1,4 @@
-package Q1_50.Q1_10
+package q1_50.q1_10
 
 /**
  * Title: 寻找两个正序数组的中位数

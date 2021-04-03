@@ -1,5 +1,7 @@
-import Q1_50.Q1_10.Solution8
+import q1_50.q1_10.Solution8
 import org.junit.jupiter.api.Test
+import q1_50.q1_10.*
+import q1_50.q11_20.*
 import java.util.*
 
 class Test {
@@ -47,5 +49,11 @@ class Test {
     fun test10(){
         val solution10 = Solution10()
         println(solution10.isMatch("aaa", "a*a"))
+    }
+
+    @Test
+    fun test16(){
+        val solution16 = Solution16()
+        println(solution16.threeSumClosest(intArrayOf(-100, -98, -2, -1), -101))
     }
 }
