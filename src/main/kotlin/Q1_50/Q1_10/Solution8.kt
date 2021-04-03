@@ -1,3 +1,5 @@
+package Q1_50.Q1_10
+
 /**
  * Title: 字符串转换整数 (atoi)
  *

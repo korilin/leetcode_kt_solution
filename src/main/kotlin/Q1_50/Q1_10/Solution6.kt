@@ -1,3 +1,5 @@
+package Q1_50.Q1_10
+
 import java.util.*
 /**
  * Title: Z 字形变换
