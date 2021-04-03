@@ -686,6 +686,44 @@ class Solution16 {
 </details>
 
 <details>
+<summary>17. 电话号码的字母组合</summary>
+
+### 电话号码的字母组合
+
+给定一个仅包含数字 `2-9` 的字符串，返回所有它能表示的字母组合。答案可以按 **任意顺序** 返回。
+
+给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。
+
+![](https://assets.leetcode-cn.com/aliyun-lc-upload/original_images/17_telephone_keypad.png)
+
+- 难度：中等
+- 链接：https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number
+
+```Kotlin
+class Solution17 {
+    /**
+     * 回溯法
+     * 数字 2，3，4，5，6，8 有 3 个对应字母，假设有 m 个这个类型的数字
+     * 数字 7，9 有 4 个对应字母，假设有 n 个这个类型的数字
+     * 时间复杂度为 O(3^m * 4^n)
+     */
+    fun letterCombinations(digits: String): List<String> {
+        val letters = arrayListOf("", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz")
+        val result = LinkedList<String>()
+        if (digits.isEmpty()) return result
+        fun backtrack(digits: String, combination: String) {
+            if (digits.isEmpty()) result.add(combination)
+            else for (letter in letters[digits[0].toInt() - 48])
+                backtrack(digits.substring(1), combination + letter)
+        }
+        backtrack(digits, "")
+        return result
+    }
+}
+```
+</details>
+
+<details>
 <summary>模板</summary>
 
 ### 题目
