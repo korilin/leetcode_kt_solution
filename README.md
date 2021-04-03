@@ -396,6 +396,7 @@ class Solution9 {
 
 - `'.'` 匹配任意单个字符
 - `'*'` 匹配零个或多个前面的那一个元素
+
 所谓匹配，是要涵盖 **整个** 字符串 `s` 的，而不是部分字符串。
   
 - 难度：困难
@@ -419,7 +420,9 @@ class Solution10 {
 ### 盛最多水的容器
 
 给你 `n` 个非负整数 `a1，a2，...，an`，每个数代表坐标中的一个点`(i, ai)` 。
+
 在坐标内画 `n` 条垂直线，垂直线 `i` 的两个端点分别为 `(i, ai)` 和 `(i, 0)`。
+
 找出其中的两条线，使得它们与 `x` 轴共同构成的容器可以容纳最多的水。
 
 说明：你不能倾斜容器。
@@ -467,6 +470,7 @@ M             1000
 例如， 罗马数字 2 写做 `II`，即为两个并列的 1。12 写做 `XII`，即为 `X` + `II`。 27 写做 `XXVII`, 即为 `XX` + `V` + `II`。
 
 通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 `IIII`，而是 `IV`。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 `IX`。
+
 这个特殊的规则只适用于以下六种情况：
 
 - `I` 可以放在 `V`(5) 和 `X`(10) 的左边，来表示 4 和 9。
@@ -526,6 +530,7 @@ M             1000
 例如， 罗马数字 2 写做 `II`，即为两个并列的 1。12 写做 `XII`，即为 `X` + `II`。 27 写做 `XXVII`, 即为 `XX` + `V` + `II`。
 
 通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 `IIII`，而是 `IV`。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 `IX`。
+
 这个特殊的规则只适用于以下六种情况：
 
 - `I` 可以放在 `V`(5) 和 `X`(10) 的左边，来表示 4 和 9。
@@ -594,6 +599,45 @@ class Solution14 {
         }
         if (index < 0) return ""
         return strs[0].substring(0, index)
+    }
+}
+```
+</details>
+
+<details>
+<summary>15. 三数之和</summary>
+
+### 三数之和
+
+给你一个包含 `n` 个整数的数组 `nums`，判断 `nums` 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有和为 0 且不重复的三元组。
+
+注意：答案中不可以包含重复的三元组。
+
+- 难度：中等
+- 链接：https://leetcode-cn.com/problems/3sum
+
+```Kotlin
+class Solution15 {
+    fun threeSum(nums: IntArray): List<List<Int>> {
+        val result = ArrayList<List<Int>>()
+        nums.sort()
+        for (i1 in nums.indices) {
+            if (nums[i1] > 0) break
+            if (i1 > 0 && nums[i1] == nums[i1 - 1]) continue
+            var i2 = i1 + 1
+            var i3 = nums.size - 1
+            while (i2 < i3) {
+                when {
+                    nums[i1] + nums[i2] + nums[i3] > 0 -> while (i2 < --i3) if (nums[i3] != nums[i3 + 1]) break
+                    nums[i1] + nums[i2] + nums[i3] < 0 -> while (++i2 < i3) if (nums[i2] != nums[i2 - 1]) break
+                    else -> {
+                        result.add(listOf(nums[i1], nums[i2], nums[i3]))
+                        while (++i2 < i3) if (nums[i2] != nums[i2 - 1]) break
+                    }
+                }
+            }
+        }
+        return result
     }
 }
 ```
