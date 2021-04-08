@@ -776,17 +776,33 @@ class Solution18 {
 </details>
 
 <details>
-<summary>模板</summary>
+<summary>19. 删除链表的倒数第 N 个结点</summary>
 
-### 题目
+### 删除链表的倒数第 N 个结点
 
-description
+给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。
 
-- 难度：
-- 链接：
+**进阶**：你能尝试使用一趟扫描实现吗？
+
+- 难度：中等
+- 链接：https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list
 
 ```Kotlin
-code
+class Solution19 {
+    fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {
+        val node = ListNode(0)
+        node.next = head
+        var first = head
+        var second = node
+        var i = 0
+        while (first != null) {
+            first = first.next
+            if (i++ >= n) second = second.next!!
+        }
+        second.next = second.next?.next
+        return node.next
+    }
+}
 ```
 </details>
 
