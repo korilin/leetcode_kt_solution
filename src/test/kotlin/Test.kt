@@ -56,4 +56,10 @@ class Test {
         val solution16 = Solution16()
         println(solution16.threeSumClosest(intArrayOf(-100, -98, -2, -1), -101))
     }
+
+    @Test
+    fun test20(){
+        val solution20 = Solution20()
+        println(solution20.isValid("({})"))
+    }
 }

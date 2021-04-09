@@ -807,6 +807,40 @@ class Solution19 {
 </details>
 
 <details>
+<summary>20. 有效的括号</summary>
+
+### 有效的括号
+
+给定一个只包括 `'('`，`')'`，`'{'`，`'}'`，`'['`，`']'` 的字符串 `s` ，判断字符串是否有效。
+
+有效字符串需满足：
+1. 左括号必须用相同类型的右括号闭合。
+2. 左括号必须以正确的顺序闭合。
+
+- 难度：简单
+- 链接：https://leetcode-cn.com/problems/valid-parentheses
+
+```Kotlin
+class Solution20 {
+    fun isValid(s: String): Boolean {
+        val stack = Stack<Char>()
+        for(c in s){
+            when(c) {
+                '(' -> stack.push(')')
+                '{' -> stack.push('}')
+                '[' -> stack.push(']')
+                else -> {
+                    if(stack.isEmpty() || stack.pop() != c) return false
+                }
+            }
+        }
+        return stack.isEmpty()
+    }
+}
+```
+</details>
+
+<details>
 <summary>模板</summary>
 
 ### 题目
