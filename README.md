@@ -841,6 +841,49 @@ class Solution20 {
 </details>
 
 <details>
+<summary>21. 合并两个有序链表</summary>
+
+### 合并两个有序链表
+
+将两个升序链表合并为一个新的 **升序** 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
+
+- 难度：简单
+- 链接：https://leetcode-cn.com/problems/merge-two-sorted-lists
+
+```Kotlin
+class Solution21 {
+    fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode? {
+        var node1 = l1
+        var node2 = l2
+        val head = ListNode(0)
+        var node = head
+        while (node1!=null && node2!= null) {
+            if (node1.`val` <= node2.`val`) {
+                node.next = node1
+                node1 = node1.next
+            }else{
+                node.next = node2
+                node2 = node2.next
+            }
+            node = node.next!!
+        }
+        while (node1 != null) {
+            node.next = node1
+            node1 = node1.next
+            node = node.next!!
+        }
+        while (node2 !=null) {
+            node.next = node2
+            node2 = node2.next
+            node = node.next!!
+        }
+        return head.next
+    }
+}
+```
+</details>
+
+<details>
 <summary>模板</summary>
 
 ### 题目

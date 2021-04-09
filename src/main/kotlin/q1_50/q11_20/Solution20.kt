@@ -13,7 +13,7 @@ import java.util.*
  *  1. 左括号必须用相同类型的右括号闭合。
  *  2. 左括号必须以正确的顺序闭合。
  *
- * 链接：https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list
+ * 链接：https://leetcode-cn.com/problems/valid-parentheses
  */
 class Solution20 {
     fun isValid(s: String): Boolean {
