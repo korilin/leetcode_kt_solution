@@ -1,7 +1,7 @@
 package q1_50.q21_30
 
-import java.lang.StringBuilder
 import java.util.*
+import kotlin.text.StringBuilder
 
 /**
  * Title: 括号生成
@@ -15,15 +15,23 @@ import java.util.*
  */
 class Solution22 {
     fun generateParenthesis(n: Int): List<String> {
-        val linkedList = LinkedList<String>()
-        val parenthesisBuilder = StringBuilder()
-        fun getParenthesis(i:Int) {
-            if (i == n) {
-                linkedList.add(parenthesisBuilder.toString())
-            }else{
-                TODO()
+        val resultList = LinkedList<String>()
+        fun generate(builder: StringBuilder, open: Int, close: Int) {
+            if (open == n && close == n) {
+                resultList.add(builder.toString())
+            }
+            if (open < n) {
+                builder.append('(')
+                generate(builder, open + 1, close)
+                builder.deleteCharAt(builder.length - 1)
+            }
+            if (close < open) {
+                builder.append(')')
+                generate(builder, open, close + 1)
+                builder.deleteCharAt(builder.length - 1)
             }
         }
-        return linkedList
+        generate(StringBuilder(), 0, 0)
+        return resultList
     }
 }
