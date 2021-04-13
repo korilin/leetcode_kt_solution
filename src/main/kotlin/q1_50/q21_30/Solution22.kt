@@ -14,6 +14,11 @@ import kotlin.text.StringBuilder
  * 链接：https://leetcode-cn.com/problems/generate-parentheses
  */
 class Solution22 {
+    /**
+     * 回溯法
+     * 时间复杂度：n 个卡特兰数
+     * 空间复杂度：需要 n*2 个栈帧，因此复杂度为 O(n)
+     */
     fun generateParenthesis(n: Int): List<String> {
         val resultList = LinkedList<String>()
         fun generate(builder: StringBuilder, open: Int, close: Int) {
