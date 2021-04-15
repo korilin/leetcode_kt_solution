@@ -2,6 +2,7 @@ import q1_50.q1_10.Solution8
 import org.junit.jupiter.api.Test
 import q1_50.q1_10.*
 import q1_50.q11_20.*
+import q1_50.q21_30.Solution23
 import java.util.*
 
 class Test {
@@ -61,5 +62,19 @@ class Test {
     fun test20(){
         val solution20 = Solution20()
         println(solution20.isValid("({})"))
+    }
+
+    @Test
+    fun test23(){
+        val solution23 = Solution23()
+        val h1 = Solution23.ListNode(1)
+        h1.next = Solution23.ListNode(4)
+        h1.next!!.next = Solution23.ListNode(5)
+        val h2 = Solution23.ListNode(1)
+        h2.next = Solution23.ListNode(3)
+        h2.next!!.next = Solution23.ListNode(4)
+        val h3 = Solution23.ListNode(2)
+        h3.next = Solution23.ListNode(6)
+        println(solution23.mergeKLists(arrayOf(h1, h2, h3)))
     }
 }
