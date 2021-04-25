@@ -1,15 +1,7 @@
 package q1_50.q11_20
 
 /**
- * Title: 最长公共前缀
- *
- * difficulty: 简单
- *
- * Description:
- * 编写一个函数来查找字符串数组中的最长公共前缀。
- * 如果不存在公共前缀，返回空字符串 ""。
- *
- * 链接：https://leetcode-cn.com/problems/longest-common-prefix
+ * https://leetcode-cn.com/problems/longest-common-prefix
  */
 class Solution14 {
     /**

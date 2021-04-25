@@ -1,7 +1,7 @@
 package q1_50.q21_30
 
 /**
- *
+ * https://leetcode-cn.com/problems/remove-element
  */
 class Solution27 {
     fun removeElement(nums: IntArray, `val`: Int): Int {

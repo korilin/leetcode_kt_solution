@@ -2,14 +2,7 @@ package q1_50.q1_10
 
 import java.util.*
 /**
- * Title: Z 字形变换
- *
- * difficulty: 中等
- *
- * Description:
- * 将一个给定字符串 s 根据给定的行数 numRows ，以从上往下、从左到右进行 Z 字形排列。
- *
- * 链接：https://leetcode-cn.com/problems/zigzag-conversion
+ * https://leetcode-cn.com/problems/zigzag-conversion
  */
 class Solution6 {
     fun convert(s: String, numRows: Int): String {

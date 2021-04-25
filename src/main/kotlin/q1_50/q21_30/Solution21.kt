@@ -1,14 +1,7 @@
 package q1_50.q21_30
 
 /**
- * Title: 有效的括号
- *
- * difficulty: 简单
- *
- * Description:
- * 将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
- *
- * 链接：https://leetcode-cn.com/problems/merge-two-sorted-lists
+ * https://leetcode-cn.com/problems/merge-two-sorted-lists
  */
 class Solution21 {
     fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode? {

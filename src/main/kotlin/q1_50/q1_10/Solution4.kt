@@ -1,14 +1,7 @@
 package q1_50.q1_10
 
 /**
- * Title: 寻找两个正序数组的中位数
- *
- * difficulty: 困难
- *
- * Description:
- * 给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的 中位数 。
- *
- * 链接：https://leetcode-cn.com/problems/median-of-two-sorted-arrays
+ * https://leetcode-cn.com/problems/median-of-two-sorted-arrays
  */
 class Solution4 {
     /**

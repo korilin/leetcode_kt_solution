@@ -1,14 +1,7 @@
 package q1_50.q1_10
 
 /**
- * Title: 最长回文子串
- *
- * difficulty: 中等
- *
- * Description:
- * 给你一个字符串 s，找到 s 中最长的回文子串。
- *
- * 链接：https://leetcode-cn.com/problems/longest-palindromic-substring
+ * https://leetcode-cn.com/problems/longest-palindromic-substring
  */
 class Solution5 {
     /**
