@@ -17,7 +17,7 @@ class Solution8 {
      */
     fun myAtoi(s: String): Int {
         var readStatus = 0
-        var readCharInStatus = 0
+        var readCharInStatus: Int
         var num = 0
         var signed = 1
         var read: Int

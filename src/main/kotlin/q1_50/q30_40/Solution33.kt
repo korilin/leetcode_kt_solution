@@ -1,5 +1,8 @@
 package q1_50.q30_40
 
+/**
+ * https://leetcode-cn.com/problems/search-in-rotated-sorted-array/
+ */
 class Solution33 {
     fun search(nums: IntArray, target: Int): Int {
         var offset = 1

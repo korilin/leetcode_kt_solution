@@ -1,5 +1,8 @@
 package q201_250.q201_210
 
+/**
+ * https://leetcode-cn.com/problems/reverse-linked-list/
+ */
 class Solution206 {
     fun reverseList(head: ListNode?): ListNode? {
 

@@ -1,5 +1,8 @@
 package q101_150.q141_150
 
+/**
+ * https://leetcode-cn.com/problems/linked-list-cycle/
+ */
 class Solution141 {
 
     fun hasCycle(head: ListNode?): Boolean {

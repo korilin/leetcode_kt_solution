@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test
 import q1_50.q1_10.*
 import q1_50.q11_20.*
 import q1_50.q21_30.Solution23
+import q51_100.q61_70.Solution70
 import java.util.*
 
 class Test {
@@ -76,5 +77,17 @@ class Test {
         val h3 = Solution23.ListNode(2)
         h3.next = Solution23.ListNode(6)
         println(solution23.mergeKLists(arrayOf(h1, h2, h3)))
+    }
+
+    @Test
+    fun test70(){
+        val solution70 = Solution70()
+        println(solution70.climbStairs(1))
+        println(solution70.climbStairs(2))
+        println(solution70.climbStairs(3))
+        println(solution70.climbStairs(4))
+        println(solution70.climbStairs(5))
+        println(solution70.climbStairs(6))
+        println(solution70.climbStairs(7))
     }
 }
