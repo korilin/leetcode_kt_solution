@@ -1,5 +1,8 @@
 package q251_q300.q281_290
 
+/**
+ * https://leetcode-cn.com/problems/move-zeroes/
+ */
 class Solution283 {
     fun moveZeroes(nums: IntArray): Unit {
         var zeroIndex = -1
