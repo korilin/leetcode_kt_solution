@@ -1,5 +1,7 @@
 package offer2
 
+import kotlin.math.pow
+
 fun numWays(n: Int): Int {
     if (n < 2) return 1
     var v1 = 1
