@@ -5,7 +5,6 @@ package q201_250.q201_210
  */
 class Solution206 {
     fun reverseList(head: ListNode?): ListNode? {
-
         var h: ListNode? = null
         var current = head
         var next: ListNode?
