@@ -25,7 +25,3 @@ fun isNumber(s: String): Boolean {
     }
     return status != 0 && status != 1 && status != 2 && status != 6 && status != 7 && i == s.length
 }
-
-fun main() {
-    println(isNumber("-1E-16"))
-}
