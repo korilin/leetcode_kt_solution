@@ -2,11 +2,6 @@ package offer2
 
 import java.util.*
 
-class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
-
 // [3, 9, 8, 5, 4, 10, 20, 15, 7]
 // [4, 5, 8, 10, 9, 3, 15, 20, 7]
 fun buildTree(preorder: IntArray, inorder: IntArray): TreeNode? {
