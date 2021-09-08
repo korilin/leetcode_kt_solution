@@ -1,6 +1,5 @@
 package offer2
 
-import java.util.*
 
 fun spiralOrder(matrix: Array<IntArray>): IntArray {
     var top = 0
