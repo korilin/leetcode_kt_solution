@@ -1,4 +1,4 @@
-package q1201_1250.q1221_1230
+package more
 
 class Solution1221 {
     /**
