@@ -2,6 +2,18 @@ package offer2;
 
 
 public class O35 {
+     public static class Node {
+        int val;
+        Node next;
+        Node random;
+
+        public Node(int val) {
+            this.val = val;
+            this.next = null;
+            this.random = null;
+        }
+    }
+
     public Node copyRandomList(Node head) {
 
         if (head == null) return null;
@@ -26,17 +38,5 @@ public class O35 {
         }
 
         return newHead;
-    }
-}
-
-class Node {
-    int val;
-    Node next;
-    Node random;
-
-    public Node(int val) {
-        this.val = val;
-        this.next = null;
-        this.random = null;
     }
 }

@@ -1,10 +1,11 @@
+
+import offer2.O36
 import q1_50.q1_10.Solution8
 import org.junit.jupiter.api.Test
 import q1_50.q1_10.*
 import q1_50.q11_20.*
 import q1_50.q21_30.Solution23
 import q51_100.q61_70.Solution70
-import java.util.*
 
 class Test {
 
